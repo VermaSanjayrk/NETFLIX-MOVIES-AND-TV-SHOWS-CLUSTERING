@@ -36,7 +36,9 @@ As per the problem statement, understanding what type of content is available in
 ![image](https://user-images.githubusercontent.com/91052155/184506111-945bf8a5-b0ac-4731-92af-5f50a584df31.png)
 
 ### Hypothesis Evaluation
-![image](https://user-images.githubusercontent.com/91052155/184506129-f01bbfa6-7fe2-4680-8608-8f29d1f3313d.png)![image](https://user images.githubusercontent.com/91052155/184506134-389c4618-516c-4876-8ce9-49a0dde41e95.png)
+![image](https://user-images.githubusercontent.com/91052155/184506129-f01bbfa6-7fe2-4680-8608-8f29d1f3313d.png)![image](https://user-images.githubusercontent.com/91052155/184506320-5a87ab67-fe46-47a4-ad44-d01149ed69c9.png)
+
+
 
 Hypothesis from the data visualized-
 1. According to the first graph, the number of TV shows launched in the previous few years is growing.
