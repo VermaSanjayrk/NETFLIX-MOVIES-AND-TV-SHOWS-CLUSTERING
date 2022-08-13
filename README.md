@@ -40,4 +40,40 @@ As per the problem statement, understanding what type of content is available in
 Hypothesis from the data visualized-
 1. According to the first graph, the number of TV shows launched in the previous few years is growing.
 2. According to the second graph, the number of TV shows added to Netflix is stable.
+## Building a clustering model
+Clustering models allow you to categorize records into a certain number of clusters. This can help you identify natural groups in your data.
+
+Clustering models focus on identifying groups of similar records and labeling the records according to the group to which they belong. This is done without the benefit of prior knowledge about the groups and their characteristics. In fact, you may not even know exactly how many groups to look for. This is what distinguishes clustering models from the other machine-learning techniques—there is no predefined output or target field for the model to predict. These models are often referred to as unsupervised learning models, since there is no external standard by which to judge the model's classification performance.
+## Model Implementation
+### 1.	Agglomerative Clustering-
+The agglomerative clustering is the most common type of hierarchical clustering used to group objects in clusters based on their similarity.Next, pairs of clusters are successively merged until all clusters have been merged into one big cluster containing all objects.
+We used a dendrogram to find the number of clusters. 
+![image](https://user-images.githubusercontent.com/91052155/184506197-a1786a10-787b-499e-8768-de24f46bb8f8.png)
+### 2.	K-means Clustering
+k-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster.
+We created the sample data using build blobs and used range_n_clusters to specify the number of clusters we wanted to utilize in k means.
+## Metrics: Silhouette Coefficient or silhouette score-
+Silhouette analysis can be used to study the separation distance between the resulting clusters. The silhouette plot displays a measure of how close each point in one cluster is to points in the neighboring clusters and thus provides a way to assess parameters like number of clusters visually. This measure has a range of [-1, 1].
+Silhouette coefficients (as these values are referred to as) near +1 indicate that the sample is far away from the neighboring clusters. A value of 0 indicates that the sample is on or very close to the decision boundary between two neighboring clusters and negative values indicate that those samples might have been assigned to the wrong cluster.
+## Conclusion-
+1.	Most films were released in the years 2018, 2019, and 2020.
+2.	TV shows account for 2.8 percent of the total, while movies account for 97.2 percent.
+3.	Dramas is a genre that is mostly watched on Netflix and as per audience preference international movies are mostly watched.
+4.	The largest count of Netflix content is made with a “TV-14” rating,
+5.	The United States, India, the United Kingdom, Canada, and Egypt are the top five producer countries.
+6.	Netflix has added a lot more movies and TV episodes in the previous years, but the numbers are still low when compared to movies released in the last ten years.
+7.	Movies are mostly watched in various countries rather than TV shows.
+8.	We performed data engineering to remove the unnecessary variables and to convert the data into standardized form into scalar.
+9.	We used the Agglomerative Clustering model with dendrogram to obtain the clusters= 4 which gave the silhouette score as 0.19676189959151683.This score is not good so to improve the model we utilized the K-means clustering model.
+10.	Implemented model is based on the K-means clustering algorithm consisting of 2,3,4,5,6 clusters.
+Silhouette Analysis score for K-means :
+●	For n_clusters = 2 The average silhouette_score is : 0.7049787496083262
+●	For n_clusters = 3 The average silhouette_score is : 0.5882004012129721
+●	For n_clusters = 4 The average silhouette_score is : 0.6505186632729437
+●	For n_clusters = 5 The average silhouette_score is : 0.56376469026194
+●	For n_clusters = 6 The average silhouette_score is : 0.4504666294372765
+11.	After clustering, we can say that our alternative hypothesis is that the number of TV shows launched in the previous few years is NOT growing.
+12.	Our second alternative hypothesis is the number of TV shows added to Netflix is higher.
+
+# Thank You
 
